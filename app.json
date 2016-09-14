@@ -11,6 +11,9 @@
     },
     "KAFKA_URL": {
       "required": true
+    },
+    "KAFKA_TOPIC": {
+      "required": true
     }
   },
   "formation": {

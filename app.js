@@ -7,6 +7,8 @@ var routes = require('./routes');
 
 const Kafka = require('no-kafka');
 
+const topic = process.env.KAFKA_TOPIC || 'test';
+
 /*
  * Configure web app pieces
  *
@@ -73,5 +75,5 @@ const consumer = new Kafka.SimpleConsumer({
 
 return consumer.init().then(function () {
   // Subscribe partiton 0 in a topic:
-  return consumer.subscribe('test', [0], dataHandler);
+  return consumer.subscribe(topic, [0], dataHandler);
 });
