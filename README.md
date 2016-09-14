@@ -1,4 +1,4 @@
-## kafka-tweet-consumer
+## kafka-message-waterfall
 
 A simple app that streams Kafka messages down a web page.
 
