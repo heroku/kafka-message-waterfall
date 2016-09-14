@@ -1,8 +1,6 @@
 ## kafka-tweet-consumer
 
-A simple app that streams tweets containing a specified set of keywords to web browser clients.
-
-Keywords are specified in the kafka-tweets app.  They are read from a Kafka topic named 'test' from the 0th (zeroth) partition in that topic.
+A simple app that streams Kafka messages down a web page.
 
 #### Development Setup
 ```shell
@@ -23,8 +21,8 @@ Open http://localhost:3000 in a browser and watch tweets stream in...
 
 #### Deploy
 ```shell
-git clone git@github.com:crcastle/kafka-tweet-consumer.git
-cd kafka-tweet-consumer
+git clone git@github.com:crcastle/kafka-message-waterfall.git
+cd kafka-message-waterfall
 heroku create
 ```
 You can define the below environment variables manually, or you can run this command to define them from another app that already has a Kafka cluster attached: `heroku addons:attach my-originating-app::KAFKA` (where "my-originating-app" is the app to which the cluster is already attached)
