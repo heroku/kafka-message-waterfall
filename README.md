@@ -24,6 +24,7 @@ Open http://localhost:3000 in a browser and watch tweets stream in...
 git clone git@github.com:crcastle/kafka-message-waterfall.git
 cd kafka-message-waterfall
 heroku create
+git push heroku master
 ```
 You can define the below environment variables manually, or you can run this command to define them from another app that already has a Kafka cluster attached: `heroku addons:attach my-originating-app::KAFKA` (where "my-originating-app" is the app to which the cluster is already attached)
 
