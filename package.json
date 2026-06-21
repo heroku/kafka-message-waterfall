@@ -15,6 +15,6 @@
     "express": "^4.14.0",
     "no-kafka": "git://github.com/crcastle/kafka.git#3.0",
     "pug": "^2.0.0-beta5",
-    "ws": "^1.1.1"
+    "ws": "^8.17.1"
   }
 }
